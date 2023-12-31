@@ -1,0 +1,21 @@
+.About{
+    padding: 4rem 6rem;
+    color: #222;
+}
+
+.history,
+.mission,
+.vision{
+    text-align: start;
+    padding-bottom: 1rem;
+}
+
+.About p{
+    padding-bottom: 1rem;
+}
+
+@media screen and (max-width:850px) {
+    .About{
+        padding: 4rem 2rem;
+    }
+}

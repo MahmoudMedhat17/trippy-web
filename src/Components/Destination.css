@@ -1,0 +1,108 @@
+.destination{
+    margin: 4rem 6rem;
+}
+
+.destination h1{
+    font-size: 3rem;
+}
+
+/*First description Style*/
+
+.first-desc{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 4.5rem;
+}
+
+.first-desc .desc-text{
+    width: 50%;
+    text-align: start;
+    font-size: 1.1rem;
+    margin-right: 10px;
+}
+
+.first-desc .desc-text h2{
+    padding-bottom: 1rem;
+}
+
+/*Second Descritption Style*/
+
+.first-desc-reverse{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 4.5rem;
+}
+
+.first-desc-reverse .desc-text{
+    width: 50%;
+    text-align: start;
+    font-size: 1.1rem;
+    margin-left: 10px;
+}
+
+.first-desc-reverse .desc-text h2{
+    padding-bottom: 1rem;
+}
+
+/*Images Style*/
+
+.desc-images{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: -99;
+}
+
+.desc-images img{
+    width: 49%;
+    height: 350px;
+    border-radius: 6px;
+    box-shadow: -1px 1px 62px -18px rgba(0, 0, 0, 0.19);
+    object-fit: cover;
+}
+
+.desc-images img:nth-child(2){
+    position: absolute;
+    right: 0;
+    top: -10%;
+}
+
+/*Responsive Style*/
+
+@media screen and (max-width:850px) {
+    .destination{
+        margin: 4rem 2rem;
+    }
+
+    .first-desc{
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 2.5rem;
+    }
+
+    .first-desc .desc-text{
+        width: 100%;
+    }
+
+    .desc-images{
+        width: 100%;
+    }
+
+    .desc-images img{
+        height: 250px;
+    }
+
+    .first-desc-reverse{
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 2.5rem;
+    }
+
+    .first-desc-reverse .desc-text{
+        width: 100%;
+    }
+}
